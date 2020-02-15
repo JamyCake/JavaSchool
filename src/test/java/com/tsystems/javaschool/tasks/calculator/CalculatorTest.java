@@ -267,4 +267,17 @@ public class CalculatorTest {
         Assert.assertEquals(expectedResult, result);
     }
 
+    @Test
+    public void evaluate20() {
+        //given
+        String input = "1+3*(12/4+((10-5))-5)+(5*5)";
+        String expectedResult = "35";
+
+        //run
+        String result = calc.evaluate(input);
+
+        //assert
+        Assert.assertEquals(expectedResult, result);
+    }
+
 }
